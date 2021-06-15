@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .button {
+        min-width: 180px;
+        min-height: 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+        font-weight: 300;
+        color: #ffffff;
+        background: #ec4899;
+        border: none;
+        border-radius: 1000px;
+        transition: all 0.3s ease-in-out 0s;
+        cursor: pointer;
+        outline: none;
+        position: relative;
+        padding: 10px;
+        margin-top: 25px;
+        }
+      
+      .button::before {
+        content: '';
+        border-radius: 1000px;
+        min-width: calc(180px + 17px);
+        min-height: calc(60px + 14px);
+        border: 2px solid #ec4899;
+        transform: translate(-25%, -36.2%);
+        position: absolute;
+        color: #313133;
+      }
+      
+     .slanted::after{
+         content: '';
+        width: 0;
+        border-style: solid;
+        height: 0;
+        border-color: transparent white transparent transparent;
+        border-width: 0 100vw 250px 0;
+     }
+
+     .stroke-white{
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: white;
+    }
+    
+    .stroke-blue{
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: blue;
+    }
+    
+      
+
+}
